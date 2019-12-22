@@ -35,7 +35,3 @@ pub fn impl_of_datatypes() {
     
     println!("{}", get_return(2));
 }
-
-pub extern fn add_one(){
-    println!("Hello World");
-}

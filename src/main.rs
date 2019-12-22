@@ -1,18 +1,19 @@
+#![allow(dead_code)]
 
-mod method;
+mod async_await;
 mod condition;
-mod types;
 mod data_structure;
-mod loops;
 mod enums;
-mod pattern;
 mod lifetime;
+mod loops;
+mod method;
+mod pattern;
 mod structs;
+mod types;
 
-
+use futures::executor::block_on;
 
 fn main() {
-
     print!("-------------Condition–---------------\n");
     condition::impl_of_cond(6);
 
@@ -35,5 +36,7 @@ fn main() {
     lifetime::lifetime();
 
     structs::impl_of_struct();
-    
+
+    print!("-------------Async Await ---------------\n");
+    block_on(async_await::impl_of_async());
 }
