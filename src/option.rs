@@ -9,7 +9,7 @@ fn divide(x: i32, y: i32) -> Option<i32> {
 }
 
 pub fn impl_of_option() {
-    let result = divide(20, 0);
+    let result = divide(20, 2);
     
     match result {
         None => println!("Error occured"),

@@ -11,6 +11,7 @@ mod pattern;
 mod structs;
 mod types;
 mod option;
+mod traits;
 
 use futures::executor::block_on;
 
@@ -42,4 +43,6 @@ fn main() {
     block_on(async_await::impl_of_async());
 
     option::impl_of_option();
+
+    traits::impl_of_traits();
 }
