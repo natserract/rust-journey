@@ -39,7 +39,7 @@ fn main() {
     structs::impl_of_struct();
 
     print!("-------------Async Await ---------------\n");
-    block_on(async_await::impl_of_async());
+    // block_on(async_await::impl_of_async());
 
     option::impl_of_option();
 }

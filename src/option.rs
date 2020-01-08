@@ -1,9 +1,10 @@
 
 fn divide(x: i32, y: i32) -> Option<i32> {
+    // -> 0i32 - default value: 0  
     if y == 0i32 {
         None
     } else {
-        Some(x/y)
+        Some(x*y)
     }
 }
 
