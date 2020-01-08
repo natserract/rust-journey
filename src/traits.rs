@@ -22,8 +22,8 @@ impl Random for Value {
 }
 
 pub fn impl_of_traits() {
-    let my_gender = Value { single: true };
+    let my_status = Value { single: true };
 
-    println!("Are you single? {:?}", my_gender.check_single().single);
+    println!("Are you single? {:?}", my_status.check_single().single);
 
 }
