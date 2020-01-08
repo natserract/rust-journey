@@ -10,6 +10,7 @@ mod method;
 mod pattern;
 mod structs;
 mod types;
+mod option;
 
 use futures::executor::block_on;
 
@@ -39,4 +40,6 @@ fn main() {
 
     print!("-------------Async Await ---------------\n");
     block_on(async_await::impl_of_async());
+
+    option::impl_of_option();
 }
