@@ -2,7 +2,7 @@
 
 mod async_await;
 mod condition;
-mod data_structure;
+mod ownership_borrowing;
 mod enums;
 mod lifetime;
 mod loops;
@@ -32,7 +32,7 @@ fn main() {
     method::use_method();
 
     print!("-------------Data Structure---------------\n");
-    data_structure::borrowing();
+    ownership_borrowing::borrowing();
     pattern::rust_pattern();
 
     lifetime::lifetime();
