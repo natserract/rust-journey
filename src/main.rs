@@ -1,48 +1,50 @@
 #![allow(dead_code)]
 
-mod async_await;
-mod condition;
-mod ownership_borrowing;
-mod enums;
-mod lifetime;
-mod loops;
-mod method;
-mod pattern;
-mod structs;
-mod types;
-mod option;
-mod traits;
+mod ex_async_await;
+mod ex_condition;
+mod ex_ownership_borrowing;
+mod ex_enums;
+mod ex_lifetime;
+mod ex_loops;
+mod ex_method;
+mod ex_pattern;
+mod ex_structs;
+mod ex_types;
+mod ex_option;
+mod ex_traits;
+mod ex_macro;
 
 use futures::executor::block_on;
 
 fn main() {
     print!("-------------Condition–---------------\n");
-    condition::impl_of_cond(6);
+    ex_condition::impl_of_cond(6);
 
     print!("-------------Data Types---------------\n");
-    types::impl_of_datatypes();
+    ex_types::impl_of_datatypes();
 
     print!("-------------Loop---------------\n");
-    loops::impl_of_loop();
+    ex_loops::impl_of_loop();
 
     print!("-------------Enum---------------\n");
-    enums::impl_of_enum();
+    ex_enums::impl_of_enum();
 
     print!("-------------Method---------------\n");
-    method::use_method();
+    ex_method::use_method();
 
     print!("-------------Data Structure---------------\n");
-    ownership_borrowing::borrowing();
-    pattern::rust_pattern();
+    ex_ownership_borrowing::borrowing();
+    ex_pattern::rust_pattern();
 
-    lifetime::lifetime();
+    ex_lifetime::lifetime();
 
-    structs::impl_of_struct();
+    ex_structs::impl_of_struct();
 
     print!("-------------Async Await ---------------\n");
-    block_on(async_await::impl_of_async());
+    block_on(ex_async_await::impl_of_async());
 
-    option::impl_of_option();
+    ex_option::impl_of_option();
 
-    traits::impl_of_traits();
+    ex_traits::impl_of_traits();
+    ex_macro::impl_of_macro();
 }
